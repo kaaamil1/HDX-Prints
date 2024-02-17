@@ -4,9 +4,18 @@
     --grey: #415161;
 }
 
+* {
+    color: var(--grey);
+}
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+*::selection {
+    color: white;
+    background-color: var(--light-red) !important;
 }
 
 .barlow {
@@ -39,7 +48,7 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--grey) !important;
     transition: all ease .4s;
     font-size: 14px;
     line-height: 100px;
@@ -48,13 +57,16 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-header nav ul li:first-child a {
-    color: var(--light-red);
+header nav ul li:first-child a,
+header nav ul li:last-child a,
+header nav ul li:last-child a i {
+    fill: var(--light-red) !important;
+    color: var(--light-red) !important;
 }
 
 header nav ul li a:hover {
     text-decoration: none;
-    color: var(--light-red);
+    color: var(--light-red) !important;
 }
 
 header .hamburger {
@@ -65,17 +77,183 @@ header .hamburger {
 
 /* main */
 
-main 
+main #hero-section .row {
+    align-items: center;
+}
 
+main #hero-section h1 {
+    font-size: 94px;
+    font-weight: 600;
+    line-height: 94px;
+    color: 
+}
+
+main #hero-section p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30.6px;
+    margin-bottom: 50px;
+}
+
+main #hero-section a {
+    padding: 13px 30px 13px 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--grey) !important;
+    border-top: 2px solid var(--grey);
+    border-right: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+}
+
+
+
+main #gallery-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main #gallery-section h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48.3px;
+}
+
+main #gallery-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+main #gallery-section p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30.6px;
+    opacity: .8;
+    margin: 0px 0px 27.2px;
+}
+
+main #gallery-section a {
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    padding: 13px 30px 13px 5px;
+    color: var(--grey) !important;
+    border-top: 2px solid var(--grey);
+    border-right: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+}
+
+main #gallery-section .grid-1 {
+    padding: 80px 40px;
+    background-image: url(media/grid-1.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #gallery-section .grid-2 {
+    padding: 80px 40px;
+    background-image: url(media/grid-2.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #gallery-section .grid-3 {
+    padding: 80px 40px;
+    background-image: url(media/grid-3.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #gallery-section .grid-4 {
+    padding: 80px 40px 50px 0;
+    background-color: #E2DBD1;
+}
+
+main #gallery-section .grid-5 {
+    padding: 80px 40px;
+    background-image: url(media/grid-5.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #gallery-section .grid-6 {
+    padding: 80px 40px;
+    background-image: url(media/grid-6.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #gallery-section .grid-7 {
+    padding: 80px 40px;
+    background-image: url(media/grid-7.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#cotm .row{
+    padding: 0 50px;
+}
 
 
 
 @media screen and (max-width: 768px) {
     header .hamburger {
         display: block;
+        font-size: 30px;
     }
 
     header nav {
         display: none;
+    }
+
+    main #header-section img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    header {
+        padding: 30px !important;
+    }
+
+    main #hero-section h1 {
+        margin-top: 50px;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    
+    main #hero-section p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30.6px;
+        margin-bottom: 20px;
+    }
+    
+    main #hero-section a {
+        padding: 13px 30px 13px 5px;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--grey) !important;
+        border-top: 2px solid var(--grey);
+        border-right: 2px solid var(--grey);
+        border-bottom: 2px solid var(--grey);
+    }   
+
+    main #gallery-section .grid-1,
+    main #gallery-section .grid-2,
+    main #gallery-section .grid-3,
+    main #gallery-section .grid-4,
+    main #gallery-section .grid-5,
+    main #gallery-section .grid-6,
+    main #gallery-section .grid-7 {
+        padding: 100px 30px !important;
     }
 }
