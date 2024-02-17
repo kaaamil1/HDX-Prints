@@ -229,6 +229,7 @@ main #gallery-section .grid-7 {
 
 .pink-bg .row {
     padding: 50px;
+    align-items: center;
 }
 
 .pink-bg h2 {
@@ -238,10 +239,19 @@ main #gallery-section .grid-7 {
     font-weight: 600;
 }
 
-.pink-bg a {
-
+.pink-bg i {
+    color: white;
 }
 
+.pink-bg a {
+    padding: 13px 30px 13px 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: white !important;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
 
 
 @media screen and (max-width: 768px) {
