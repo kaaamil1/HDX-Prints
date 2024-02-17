@@ -318,4 +318,49 @@ main #gallery-section .grid-7 {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
+    #cotm {
+        padding: 30px 0;
+    }
+
+    #cotm img {
+        margin: 30px 0;
+    }
+    
+    #cotm h2 {
+        font-size: 32px;
+        line-height: 28.3px;
+        font-weight: 600;
+    }
+    
+    #cotm p {
+        font-size: 14px;
+        line-height: 15.6px;
+        font-weight: 500;
+    }
+
+    .pink-bg .col-sm-7 {
+        width: 60%;
+    }
+        
+    .pink-bg h2 {
+        color: white;
+        font-size: 42px;
+        line-height: 48.3px;
+        font-weight: 600;
+    }
+
+    .pink-bg i {
+        color: white;
+    }
+
+    .pink-bg a {
+        padding: 10px 25px 10px 5px;
+        font-size: 12px;
+        line-height: 14px;
+        color: white !important;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+    }
 }
