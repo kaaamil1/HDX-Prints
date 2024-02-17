@@ -197,8 +197,49 @@ main #gallery-section .grid-7 {
 
 
 
+#cotm {
+    background-color: #F5F5F5;
+    padding-top: 20px;
+}
+
 #cotm .row{
     padding: 0 50px;
+    align-items: center;
+}
+
+#cotm img {
+    width: 90%;
+}
+
+#cotm h2 {
+    font-size: 42px;
+    line-height: 48.3px;
+    font-weight: 600;
+}
+
+#cotm p {
+    font-size: 17px;
+    line-height: 30.6px;
+    font-weight: 500;
+}
+
+.pink-bg {
+    background-color: var(--light-red);
+}
+
+.pink-bg .row {
+    padding: 50px;
+}
+
+.pink-bg h2 {
+    color: white;
+    font-size: 42px;
+    line-height: 48.3px;
+    font-weight: 600;
+}
+
+.pink-bg a {
+
 }
 
 
@@ -213,13 +254,14 @@ main #gallery-section .grid-7 {
         display: none;
     }
 
-    main #header-section img {
+    img {
         width: 100%;
         margin-top: 50px;
     }
 
     header {
-        padding: 30px !important;
+        padding: 0px 30px !important;
+        align-items: center;
     }
 
     main #hero-section h1 {
@@ -252,7 +294,18 @@ main #gallery-section .grid-7 {
     main #gallery-section .grid-4,
     main #gallery-section .grid-5,
     main #gallery-section .grid-6,
-    main #gallery-section .grid-7 {
+    main #gallery-section .grid-7,
+    main #gallery-section .grid-8 {
+        margin-top: 10px;
         padding: 100px 30px !important;
+    }
+
+    main #gallery-section .grid-8 {
+        display: none;
+    }
+
+    main #gallery-section {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
